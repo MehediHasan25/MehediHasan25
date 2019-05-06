@@ -61,7 +61,7 @@ $(document).ready(function () {
     async function subscribe(username, tokenId) {
         try {
             console.log("in subscribe");
-            const register = await navigator.serviceWorker.register('https://mehedihasan25.github.io/erena-sw.js', {
+            const register = await navigator.serviceWorker.register('./erena-sw.js', {
                 scope: '/'
             });
             console.log("register complete");
